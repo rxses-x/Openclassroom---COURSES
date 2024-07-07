@@ -135,10 +135,13 @@ footer section {
     align-items: flex-start;
     gap: 35px;
     margin-bottom: 35px;
+    border: 1px solid #fc007e;
 }
 
 /****** Search bar ***********/
 .search-bar {
+    margin: 0;
+    padding: 0;
     width: 377px;
     flex-direction: row;
     margin-top: 35px;
@@ -148,15 +151,15 @@ footer section {
 .search-bar form {
     display: flex;
     width: 100%;
+    height: 100%;
 }
 
 .search-bar form i {
-    width: 50px;
-    height: 50px;
     gap: 10px;
     background-color: var(--main-bg-color);
     padding: 18px 18px 0px 18px;
     border-radius: 15px 0px 0px 15px;
+    border: 1px solid var(--main-bg-color);
 }
 
 .search-text {
@@ -169,6 +172,8 @@ footer section {
 .search-bar input {
     border: none;
     outline: none;
+    border-top: 1px solid var(--main-bg-color);
+    border-bottom: 1px solid var(--main-bg-color);
 }
 
 .search-bar button {
@@ -176,7 +181,6 @@ footer section {
     background-color: var(--main-color);
     padding: 15px 16px 15px 16px;
     border-radius: 0px 15px 15px 0px;
-    border: 1px 0px 0px 0px;
 }
 
 .search-bar input::placeholder {
