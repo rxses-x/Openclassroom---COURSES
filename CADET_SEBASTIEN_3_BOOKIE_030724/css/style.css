@@ -317,7 +317,7 @@ footer section {
     display: flex;
     flex-direction: column;
     margin-top: 33px;
-    margin-bottom: 33px;
+    /* margin-bottom: 33px; */
 }
 
 .hebergements-cards img {
@@ -337,6 +337,7 @@ footer section {
 
 /****** Show more ***********/
 .show-more-container {
+    margin-top: 30px;
     font-size: 18px;
     font-weight: 700;
     line-height: 21.13px;
