@@ -278,6 +278,7 @@ footer section {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top: 35px;
     margin-bottom: 35px;
 }
 
@@ -529,4 +530,81 @@ footer section {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        width: 100%;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #F2F2F2;
+    }
+
+    ul li {
+        width: 100%;
+        flex: 1;
+    }
+
+    .main-container {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 17px;
+        border: 2px dotted pink;
+    }
+
+    .main-header {
+        display: flex;
+        padding-top: 30px;
+        margin-bottom: 17px;
+    }
+    
+    .main-header img {
+        width: 61.09px;
+        height: 19px;
+        margin: 0 auto;
+    }
+    
+    .main-header a:hover {
+        display: block;
+        width: 100%;
+        padding-bottom: 15px;
+        color: var(--main-color);
+        border-bottom: var(--main-color) 2px solid;
+    }
+
+    .activities-cards {
+        flex-direction: column;
+    }
+    
+    .activities-cards .activities-card {
+        width: 315px;
+        height: 200px;
+        border: 2px dotted pink;
+    }
+
+    .activities-card .card-title {
+        padding: 16px 19px 16px 19px;
+    }
+
+    .activities-card img {
+        width: 100%;
+        height: 141px;
+    }
+
+    footer section {
+        flex-direction: column;
+        border: 1px solid pink; 
+    }
+
+    .footer-container section ul {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        gap: 15px;
+    }
+
+    
 }
