@@ -466,7 +466,7 @@ footer section {
         font-size: 16px;
     }
 
-    h3 {
+    .card-title {
         font-size: 14px;
     }
 
@@ -510,6 +510,10 @@ footer section {
     .activities-cards .activities-card {
         width: 193.5px;
         height: 270px;
+    }
+
+    .activities-card .card-title {
+        padding: 16px 19px 16px 19px;
     }
 
     .activities-card img {
