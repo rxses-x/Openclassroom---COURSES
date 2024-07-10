@@ -68,8 +68,9 @@ header nav ul {
 }
 
 header a:hover {
+    color: var(--main-color);
     padding-top: 14px;
-    border-top: var(--main-color) 2px solid;
+    border-top: var(--main-color) 2px solid; 
 }
 
 ul {
@@ -107,7 +108,7 @@ footer section {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.card img {
+.card img, .activities-card img {
     object-fit: cover;
 }
 
@@ -128,8 +129,6 @@ footer section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 35px;
-    margin-bottom: 35px;
 }
 
 /****** Search bar ***********/
@@ -137,9 +136,9 @@ footer section {
     margin: 0;
     padding: 0;
     width: 377px;
-    flex-direction: row;
     margin-top: 35px;
     margin-bottom: 35px;
+    flex-direction: row;
 }
 
 .search-bar form {
@@ -175,6 +174,7 @@ footer section {
     background-color: var(--main-color);
     padding: 15px 16px 15px 16px;
     border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
 }
 
 .search-bar input::placeholder {
@@ -187,20 +187,12 @@ footer section {
 
 /****** Search filter ***********/
 
-.search-filter-container {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    width: 750px;
-    height: 50px;
-    align-items: center;
-
+.search-bar, .search-filter-container {
+    /* margin-top: 35px; */
+    /* margin-bottom: 35px; */
 }
 
 .filter-buttons {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -208,11 +200,7 @@ footer section {
 }
 
 .filter-buttons h3 {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21.13px;
     text-align: center;
-
     display: flex;
     flex-direction: row;
     padding-top: 14.5px;
@@ -220,6 +208,7 @@ footer section {
 }
 
 .filter-buttons section {
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -233,6 +222,7 @@ footer section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: inherit;
 }
 
 .filter-button section {
@@ -261,9 +251,10 @@ footer section {
 .search-container-information {
     display: flex;
     flex-direction: row;
-    padding: 0;
-
+    /* padding: 0; */
     margin-top: 35px;
+    /* border: 2px dotted; */
+    /* margin-bottom: 35px; */
 }
 
 .information-content {
@@ -303,6 +294,7 @@ footer section {
 }
 
 .hebergements-cards {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -317,7 +309,6 @@ footer section {
     display: flex;
     flex-direction: column;
     margin-top: 33px;
-    /* margin-bottom: 33px; */
 }
 
 .hebergements-cards img {
@@ -392,6 +383,8 @@ footer section {
 /****** Activities ***********/
 
 .activities {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     padding: 30px
 }
@@ -411,7 +404,7 @@ footer section {
 }
 
 .activities-cards .activities-card {
-    width: 297.5px;
+    width: 297px;
     height: 439px;
     justify-content: space-between;
 }
@@ -468,11 +461,34 @@ footer section {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .find-hebergements-container {
+        gap: 35px;
+        margin-bottom: 35px;
+    }
+
+    .filter-buttons {
+        display: flex;
+        flex-direction: column;
+        width: 668px;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
-    .hebergements {
+    .hebergements, .activities-cards {
         width: 100%;
     }
 
@@ -481,23 +497,30 @@ footer section {
         margin-top: 50px;
     }
 
-    .populaires-cards {
+    .populaires-cards, .hebergements-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .populaires-cards a {
+    .populaires-cards a, .hebergements-cards a {
         width: 30%;
     }
 
-    .populaires-cards .card-title {
-        font-size: 14px;
+    .activities-cards .activities-card {
+        width: 193.5px;
+        height: 270px;
     }
 
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
+    .activities-card img {
+        width: 193.5px;
+        height: 200px;
     }
+
+    .footer-title {
+        font-size: 18px;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
