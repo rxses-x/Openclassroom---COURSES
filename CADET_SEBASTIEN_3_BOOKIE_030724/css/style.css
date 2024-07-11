@@ -719,8 +719,11 @@ footer section {
     }
 
     .populaires-cards .card {
+        margin: 0;
+        padding: 0;
         width: 335px;
         height: 146px;
+        margin-top: 20px;
     }
     
     .hebergements-cards .card  {
