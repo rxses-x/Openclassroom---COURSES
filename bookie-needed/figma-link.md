@@ -1,1 +1,0 @@
-https://www.figma.com/design/B3eLowtWREc9YXzBcGRAHn/Maquettes-Booki?node-id=3-0&t=fr8kSPC9ZUI9JdSN-0
